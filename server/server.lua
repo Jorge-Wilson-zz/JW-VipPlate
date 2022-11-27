@@ -27,5 +27,5 @@ RegisterNetEvent('JW-VipPlate:server:RemoveItem', function()
     local Player = QBCore.Functions.GetPlayer(src)
 
     Player.Functions.RemoveItem("vip-plate", 1)
-    TriggerClientEvent("inventory:client:ItemBox", _src, "vip-plate", "remove", amount)
+    TriggerClientEvent("inventory:client:ItemBox", src, "vip-plate", "remove", amount)
 end)
